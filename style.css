@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+/*----------------------------------------------*/
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+body{
+    background-image: url('img/bk.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*----------------------------------------------*/
+
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+/*----------------------------------------------*/
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+header img{
+    width: 180px;
+}
+
+/*----------------------------------------------*/
+
+a{
+    text-decoration: none;
+}
+.child{
+    text-decoration: none;
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+
+    border: 0.1em solid black;
+    box-shadow: 0 0 1em black;
+    padding: 0.5em;
+    width: 80vw;
+    border-radius: 15px;
+    margin: 0.4em;
+
+    transition: all 0.5s;
+}
+.child:hover{
+    background-color: rgb(148, 148, 129);
+    color: white;
+}
+.child img{
+    margin-right: 0.6em;
+    width: 2.8em;
+}
+
+/*----------------------------------------------*/
+
+footer{
+    margin: 2em;
+    text-align: center;
+    color: white;
+}
+footer img{
+    width: 80px;
+}
+
+/*----------------------------------------------*/
+
+@media all and (min-width:426px){
+    .child{
+        width: 35vw;
+        height: 5em;
+        border-radius: 0px;
+        font-size: 1.1em;
+        margin: 0.5em;
+    }
+    .child img{
+        width: 3em;
+    }
+}
+@media all and (min-width:769px){
+    .child{
+        width: 70vw;
+        height: 3.5em;
+        border-radius: 0px;
+        font-size: 1.2em;
+        margin: 1em;
+    }
+    .child img{
+        width: 2.5em;
+    }
+}
+
+/*----------------------------------------------*/
